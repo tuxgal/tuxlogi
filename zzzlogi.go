@@ -1,0 +1,36 @@
+// Package zzzlogi exposes a generic level logging interface decoupled from any single logging implementation.
+package zzzlogi
+
+// Logger represents a generic level logging interface decoupled from any single logging implementation.
+type Logger interface {
+	// Logs the specified arguments at Trace level using the default format
+	// (i.e. separated by space).
+	Trace(args ...interface{})
+	// Logs the specified arguments at Trace level using the specified format.
+	Tracef(format string, args ...interface{})
+	// Logs the specified arguments at Debug level using the default format
+	// (i.e. separated by space).
+	Debug(args ...interface{})
+	// Logs the specified arguments at Debug level using the specified format.
+	Debugf(format string, args ...interface{})
+	// Logs the specified arguments at Info level using the default format
+	// (i.e. separated by space).
+	Info(args ...interface{})
+	// Logs the specified arguments at Info level using the specified format.
+	Infof(format string, args ...interface{})
+	// Logs the specified arguments at Warn level using the default format
+	// (i.e. separated by space).
+	Warn(args ...interface{})
+	// Logs the specified arguments at Warn level using the specified format.
+	Warnf(format string, args ...interface{})
+	// Logs the specified arguments at Error level using the default format
+	// (i.e. separated by space).
+	Error(args ...interface{})
+	// Logs the specified arguments at Error level using the specified format.
+	Errorf(format string, args ...interface{})
+	// Logs the specified arguments at Fatal level using the default format
+	// (i.e. separated by space).
+	Fatal(args ...interface{})
+	// Logs the specified arguments at Fatal level using the specified format.
+	Fatalf(format string, args ...interface{})
+}
