@@ -43,4 +43,12 @@ type Logger interface {
 	Fatal(args ...interface{})
 	// Logs the specified arguments at Fatal level using the specified format.
 	Fatalf(format string, args ...interface{})
+	// Logs the specified arguments without any levels using the default format
+	// (i.e. separated by space). Note that timestamp and log level will not
+	// be printed when logging using this function.
+	Print(args ...interface{})
+	// Logs the specified arguments without any levels using the specified
+	// format. Note that timestamp and log level will not be printed when
+	// logging using this function.
+	Printf(format string, args ...interface{})
 }
