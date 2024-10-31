@@ -1,3 +1,3 @@
-module github.com/tuxgal/zzzlogi
+module github.com/tuxgal/tuxlogi
 
 go 1.17

@@ -1,5 +1,5 @@
-// Package zzzlogi exposes a generic level logging interface decoupled from any single logging implementation.
-package zzzlogi
+// Package tuxlogi exposes a generic level logging interface decoupled from any single logging implementation.
+package tuxlogi
 
 // Logger represents a generic level logging interface decoupled from any single logging implementation.
 type Logger interface {
